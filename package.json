@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emanueli14/backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Emanueli14/backend/issues"
+  },
+  "homepage": "https://github.com/Emanueli14/backend#readme"
+}
