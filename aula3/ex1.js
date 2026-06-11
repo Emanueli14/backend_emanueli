@@ -1,10 +1,10 @@
-const input = require("readline-sync")
+const prompt = require('prompt-sync')();
 
-const aluno = {
+let nome = prompt("Digite o nome do aluno:");
+let idade = Number(prompt("Digite a idade:"));
+let turma = prompt("Digite a turma:");
 
-};
-
-console.log("Nome:", aluno.nome);
-console.log("Idade:", aluno.idade);
-console.log("Turma:", aluno.turma);
-console.log("Curso:", aluno.curso);
+console.log("=== FICHA DO ALUNO ===");
+console.log("Nome: " + nome);
+console.log("Idade: " + idade);
+console.log("Turma: " + turma);
