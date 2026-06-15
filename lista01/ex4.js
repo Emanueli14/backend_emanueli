@@ -1,6 +1,10 @@
-let linha = "";
+const readline = require("readline-sync");
 
-for (let i = 0; i < 7; i++) {
-    linha += "#";
-    console.log(linha);
+let linhas = Number(readline.question("Digite a quantidade de linhas: "));
+
+let triangulo = "";
+
+for (let i = 0; i < linhas; i++) {
+    triangulo += "#";
+    console.log(triangulo);
 }

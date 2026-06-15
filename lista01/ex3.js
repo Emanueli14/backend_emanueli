@@ -1,5 +1,7 @@
-let numero = 7;
+const readline = require("readline-sync");
 
-let resultado = numero % 2 === 0 ? "par" : "ímpar";
+let numero = Number(readline.question("Digite um numero: "));
+
+let resultado = numero % 2 === 0 ? "Par" : "Impar";
 
 console.log(resultado);

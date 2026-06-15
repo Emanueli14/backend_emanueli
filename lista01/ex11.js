@@ -9,5 +9,5 @@ let idade = Number(readline.question("Digite sua idade: "));
 if (podeVotar(idade)) {
     console.log("Pode votar.");
 } else {
-    console.log("Não pode votar.");
+    console.log("Nao pode votar.");
 }

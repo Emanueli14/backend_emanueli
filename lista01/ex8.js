@@ -2,21 +2,21 @@ const readline = require("readline-sync");
 
 let tamanho = Number(readline.question("Digite o tamanho do tabuleiro: "));
 
-let tabuleiro = "";
+let resultado = "";
 
-for (let linha = 0; linha < tamanho; linha++) {
+for (let i = 0; i < tamanho; i++) {
 
-    for (let coluna = 0; coluna < tamanho; coluna++) {
+    for (let j = 0; j < tamanho; j++) {
 
-        if ((linha + coluna) % 2 === 0) {
-            tabuleiro += "#";
+        if ((i + j) % 2 == 0) {
+            resultado += "#";
         } else {
-            tabuleiro += " ";
+            resultado += " ";
         }
 
     }
 
-    tabuleiro += "\n";
+    resultado += "\n";
 }
 
-console.log(tabuleiro);
+console.log(resultado);

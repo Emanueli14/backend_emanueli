@@ -1,4 +1,8 @@
-for (let i = 1; i <= 100; i++) {
+const readline = require("readline-sync");
+
+let limite = Number(readline.question("Digite o numero limite: "));
+
+for (let i = 1; i <= limite; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
