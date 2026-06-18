@@ -15,7 +15,7 @@ let produtosFiltrados = produtos.filter(
     produto => produto.preco > 20
 );
 
-console.log("\n=== Produtos acima de R$ 20 ===");
+console.log("\n Produtos acima de R$ 20 ");
 
 produtosFiltrados.forEach(produto => {
     console.log(`${produto.nome} - R$ ${produto.preco}`);
