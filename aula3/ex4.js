@@ -1,14 +1,27 @@
-const prompt = require('prompt-sync')();
-let numeros = [];
+const prompt = require("prompt-sync")();
 
-for (let i = 0; i < 5; i++) {
-    numeros.push(Number(prompt("Digite um número:")));
+let alunos = [];
+
+for (let i = 1; i <= 5; i++) {
+    console.log(`\nAluno ${i}`);
+
+    let id = Number(prompt("ID: "));
+    let nome = prompt("Nome: ");
+    let nota = Number(prompt("Nota: "));
+
+    alunos.push({ nome, nota });
 }
 
-let dobro = numeros.map(numero => numero * 2);
+let resultado = alunos.map(aluno => ({
+    nome: aluno.nome,
+    nota: aluno.nota,
+    situacao: aluno.nota >= 7 ? "Aprovado" : "Reprovado"
+}));
 
-console.log("Números digitados:");
-console.log(numeros);
+console.log("\nResultado");
 
-console.log("Dobro dos números:");
-console.log(dobro);
+resultado.forEach(aluno => {
+    console.log(
+        `${aluno.nome} - Nota: ${aluno.nota} - ${aluno.situacao}`
+    );
+});

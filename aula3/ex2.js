@@ -1,13 +1,29 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
+
 let produtos = [];
 
-for (let i = 0; i < 3; i++) {
-    let produto = prompt("Digite o nome do produto:");
-    produtos.push(produto);
+for (let i = 1; i <= 4; i++) {
+    console.log(`\nProduto ${i}`);
+
+    let id = Number(prompt("ID: "));
+    let nome = prompt("Nome: ");
+    let preco = Number(prompt("Preço: "));
+
+    produtos.push({ id, nome, preco });
 }
 
-console.log("=== LISTA DE PRODUTOS ===");
+console.log("\nProdutos Cadastrados");
 
-for (let produto of produtos) {
-    console.log(produto);
+for (let i = 0; i < produtos.length; i++) {
+    console.log(`ID: ${produtos[i].id} | Nome: ${produtos[i].nome} | Preço: R$ ${produtos[i].preco}`);
 }
+
+console.log("\nCadastro do 5º produto");
+
+let id = Number(prompt("ID: "));
+let nome = prompt("Nome: ");
+let preco = Number(prompt("Preço: "));
+
+produtos.push({ id, nome, preco });
+
+console.log(`\nNovo tamanho do array: ${produtos.length}`);

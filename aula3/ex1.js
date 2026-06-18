@@ -1,10 +1,21 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let nome = prompt("Digite o nome do aluno:");
-let idade = Number(prompt("Digite a idade:"));
-let turma = prompt("Digite a turma:");
+let aluno = {
+    nome: prompt("Digite seu nome: "),
+    idade: Number(prompt("Digite sua idade: ")),
+    cidade: prompt("Digite sua cidade: "),
+    curso: prompt("Digite seu curso: ")
+};
 
-console.log("=== FICHA DO ALUNO ===");
-console.log("Nome: " + nome);
-console.log("Idade: " + idade);
-console.log("Turma: " + turma);
+console.log("\nDados do Aluno");
+console.log(`Nome: ${aluno.nome}`);
+console.log(`Idade: ${aluno.idade}`);
+console.log(`Cidade: ${aluno.cidade}`);
+console.log(`Curso: ${aluno.curso}`);
+
+
+console.log("\nDados Atualizados");
+console.log(`Nome: ${aluno.nome}`);
+console.log(`Idade: ${aluno.idade}`);
+console.log(`Cidade: ${aluno.cidade}`);
+console.log(`Curso: ${aluno.curso}`);
