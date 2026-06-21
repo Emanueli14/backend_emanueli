@@ -1,7 +1,10 @@
-function executar(callback) {
-    callback();
+const input = require("readline-sync");
+
+function executarOperacao(a, b, operacao) {
+    let resultado = operacao(a, b);
+    console.log(resultado);
 }
 
-executar(() => {
-    console.log("Função executada com sucesso!");
-});
+executarOperacao(10, 3, (a, b) => a + b);
+executarOperacao(10, 3, (a, b) => a * b);
+executarOperacao(10, 3, (a, b) => a - b);
