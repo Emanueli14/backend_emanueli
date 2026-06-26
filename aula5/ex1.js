@@ -1,15 +1,12 @@
 const express = require('express');
 const app = express();
+app.use(express.json());
 
-app.get('/sobre', (req, res) => {
-  res.json({
-    nome: 'Emanueli',
-    disciplina: 'Backend',
-    ano: 2024
-  });
+app.get('/',(req, res) => {
+    res.json({ message: "meu servidor no ar!" });
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
+//ex1
+app.get('/sobre', (req, res) => {
+    res.json({ aluno: "emanueli", disciplina: "backend", ano: 2026});
 });
